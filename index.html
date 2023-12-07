@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://deltacapital.com.br/img/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src="./script/init.js" defer></script>
+    <title>Formulário - DeltaCapital</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <div className="container">
+          <h1>Formulário</h1>
+          <a href="https://deltacapital.com.br/" target="_blank">
+            Delta Capital
+          </a>
+        </div>
+      </nav>
+      <section>
+        <div class="container">
+          <form class="styledform" data-form>
+            <div class="subcontainer">
+              <div class="boxcontainer" data-first-area>
+                <img
+                  class="imagearea"
+                  src="https://deltacapital.com.br/img/logo.png"
+                  alt="delta_capital_logo"
+                />
+                <div class="selectarea">
+                  <h2>Quem está enviando o cadastro? <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="user"
+                      placeholder="Opções"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                      data-input-who
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="user" value="Loja Cadastrada">
+                      Loja Cadastrada
+                    </button>
+                    <button name="user" value="Vendedor Autônomo">
+                      Vendedor Autônomo
+                    </button>
+                    <button name="user" value="Cliente">Cliente</button>
+                  </div>
+                </div>
+                <div data-occasional-who>
+                  <div class="spaced">
+                    <div class="boxtext">
+                      <label for="name_store"
+                        >Nome da Loja/Vendedor <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="name_store"
+                        placeholder="Digite..."
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-who-required
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="phone_store"
+                        >Fone da Loja/Vendedor <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="phone_store"
+                        name="phone"
+                        placeholder="Digite..."
+                        inputmode="numeric"
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-who-required
+                        data-regex
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="selectarea">
+                  <h2>Você é atendido por qual operador? <span>*</span></h2>
+                  <span>O formulário será direcionado para Oparador.</span>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="name_operator"
+                      placeholder="Operador"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="name_operator" value="Sem Operador Definido">
+                      Sem operador definido
+                    </button>
+                    <button name="name_operator" value="Ivo Junior">
+                      Ivo Junior
+                    </button>
+                    <button name="name_operator" value="Tarsiano Malveira">
+                      Tarsiano Malveira
+                    </button>
+                    <button name="name_operator" value="Monalisa Brito">
+                      Monalisa Brito
+                    </button>
+                    <button name="name_operator" value="Thiago Ferreira">
+                      Thiago Ferreira
+                    </button>
+                    <button name="name_operator" value="Ana Souza">
+                      Ana Souza
+                    </button>
+                    <button name="name_operator" value="Ingrid Cruz">
+                      Ingrid Cruz
+                    </button>
+                  </div>
+                </div>
+                <div class="boxradio">
+                  <h2>Atividade Profissional <span>*</span></h2>
+                  <div class="itemradioform">
+                    <div>
+                      <input
+                        type="radio"
+                        value="Empresário(a)"
+                        name="professional"
+                        id="manager"
+                      />
+                      <label for="manager">Empresário(a)</label>
+                    </div>
+                  </div>
+                  <div class="itemradioform">
+                    <div>
+                      <input
+                        type="radio"
+                        value="Assalariado"
+                        name="professional"
+                        id="hired"
+                      />
+                      <label for="hired">Assalariado</label>
+                    </div>
+                    <span>Carteira Assinada</span>
+                  </div>
+                  <div class="itemradioform">
+                    <div>
+                      <input
+                        type="radio"
+                        value="Autônomo"
+                        name="professional"
+                        id="independent"
+                      />
+                      <label for="independent">Autônomo</label>
+                    </div>
+                  </div>
+                  <div class="itemradioform">
+                    <div>
+                      <input
+                        type="radio"
+                        value="Profissional Liberal"
+                        name="professional"
+                        id="graduate"
+                      />
+                      <label for="graduate">Profissional Liberal</label>
+                    </div>
+                    <span
+                      >Advogados, Médicos, Engenheiros, demais atividades com
+                      conselho e regulamentação profissional</span
+                    >
+                  </div>
+                  <div class="itemradioform">
+                    <div>
+                      <input
+                        type="radio"
+                        value="Funcionário(a) Público"
+                        name="professional"
+                        id="public"
+                      />
+                      <label for="public">Funcionário(a) Público</label>
+                    </div>
+                    <span
+                      >Concursado - Cargos comissionados não se enquadram</span
+                    >
+                  </div>
+                  <div class="itemradioform">
+                    <div>
+                      <input
+                        type="radio"
+                        value="Aposentado ou Pensionista"
+                        name="professional"
+                        id="retired"
+                      />
+                      <label for="retired">Aposentado ou Pensionista</label>
+                    </div>
+                  </div>
+                </div>
+                <div data-radio-response>
+                  <div class="spaced" style="display: none" data-manager>
+                    <div class="boxtext">
+                      <h2>Empresário(a):</h2>
+                      <label for="cnpj_company_manager"
+                        >Informar CNPJ da Empresa <span>*</span></label
+                      >
+                      <span
+                        >Caso tenha mais de um CNPJ, informar o principal</span
+                      >
+                      <input
+                        type="text"
+                        id="cnpj_company_manager"
+                        name="cnpj"
+                        placeholder="Digite..."
+                        inputmode="numeric"
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-manager-required
+                        data-geral-required
+                        data-regex
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="income">Renda <span>*</span></label>
+                      <div class="inputprice">
+                        <input
+                          type="text"
+                          id="income"
+                          name="price"
+                          placeholder="Digite..."
+                          inputmode="numeric"
+                          autocomplete="off"
+                          onclick="this.select()"
+                          data-manager-required
+                          data-geral-required
+                          data-regex
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spaced" style="display: none" data-publicHired>
+                    <div class="boxtext">
+                      <h2 data-title-publicHired></h2>
+                      <label for="name_company"
+                        >Nome da Empresa <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="name_company"
+                        placeholder="Digite..."
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-publicHired-required
+                        data-geral-required
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="adress_company"
+                        >Endereço da Empresa <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="adress_company"
+                        placeholder="Digite..."
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-publicHired-required
+                        data-geral-required
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="contact_company"
+                        >Telefone da Empresa <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="contact_company"
+                        name="phone"
+                        placeholder="Digite..."
+                        inputmode="numeric"
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-publicHired-required
+                        data-geral-required
+                        data-regex
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="function_company"
+                        >Cargo/Função <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="function_company"
+                        placeholder="Digite..."
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-publicHired-required
+                        data-geral-required
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="income_publicHired"
+                        >Renda <span>*</span></label
+                      >
+                      <div class="inputprice">
+                        <input
+                          type="text"
+                          id="income_publicHired"
+                          name="price"
+                          placeholder="Digite..."
+                          inputmode="numeric"
+                          autocomplete="off"
+                          onclick="this.select()"
+                          data-publicHired-required
+                          data-geral-required
+                          data-regex
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spaced" style="display: none" data-independent>
+                    <div class="boxtext">
+                      <h2>Autônomo:</h2>
+                      <label for="independent_job"
+                        >Trabalha com o que como Autônomo? <span>*</span></label
+                      >
+                      <span>Especifique com o que você trabalha.</span>
+                      <input
+                        type="text"
+                        id="independent_job"
+                        placeholder="Digite..."
+                        autocomplete="off"
+                        onclick="this.select()"
+                        data-independent-required
+                        data-geral-required
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="income_idependent"
+                        >Renda <span>*</span></label
+                      >
+                      <div class="inputprice">
+                        <input
+                          type="text"
+                          id="income_idependent"
+                          name="price"
+                          placeholder="Digite..."
+                          inputmode="numeric"
+                          autocomplete="off"
+                          onclick="this.select()"
+                          data-independent-required
+                          data-geral-required
+                          data-regex
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spaced" style="display: none" data-graduate>
+                    <div class="selectarea">
+                      <h2>Profissional Liberal <span>*</span></h2>
+
+                      <div class="inputselect">
+                        <input
+                          type="text"
+                          id="profession"
+                          placeholder="Profissional Liberal"
+                          autocomplete="off"
+                          data-graduate-required
+                          data-geral-required
+                          data-input-select
+                          data-input-profession
+                        />
+                        <p>
+                          <span class="material-symbols-outlined"
+                            >expand_more</span
+                          >
+                        </p>
+                      </div>
+                      <div class="selectlist" data-select-list>
+                        <button name="profession" value="Advogado(a)">
+                          Advogado(a)
+                        </button>
+                        <button name="profession" value="Arquiteto(a)">
+                          Arquiteto(a)
+                        </button>
+                        <button name="profession" value="Comerciário">
+                          Comerciário
+                        </button>
+                        <button name="profession" value="Contador(a)">
+                          Contador(a)
+                        </button>
+                        <button name="profession" value="Dentista">
+                          Dentista
+                        </button>
+                        <button name="profession" value="Enfermeiros(as)">
+                          Enfermeiros(as)
+                        </button>
+                        <button name="profession" value="Engenheiro(a)">
+                          Engenheiro(a)
+                        </button>
+                        <button name="profession" value="Fisioterapeuta">
+                          Fisioterapeuta
+                        </button>
+                        <button name="profession" value="Fonoaudiólogo(a)">
+                          Fonoaudiólogo(a)
+                        </button>
+                        <button name="profession" value="Médico(a)">
+                          Médico(a)
+                        </button>
+                        <button name="profession" value="Nutricionista">
+                          Nutricionista
+                        </button>
+                        <button name="profession" value="Professores(as)">
+                          Professores(as)
+                        </button>
+                        <button name="profession" value="Psicólogo(a)">
+                          Psicólogo(a)
+                        </button>
+                        <button
+                          name="profession"
+                          value="Técnicos em Enfermagem"
+                        >
+                          Técnicos em Enfermagem
+                        </button>
+                        <button name="profession" value="Terapeuta Ocupacional">
+                          Terapeuta Ocupacional
+                        </button>
+                        <button
+                          name="profession"
+                          value="Outros Profissionais Liberais"
+                        >
+                          Outros Profissionais Liberais
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="boxtext"
+                      style="display: none"
+                      data-occasional-profession
+                    >
+                      <label for="outher_area"
+                        >Profissional de outra área, favor informar
+                        <span>*</span></label
+                      >
+                      <input
+                        type="text"
+                        id="outher_area"
+                        placeholder="Digite..."
+                        autocomplete="off"
+                        data-profession-required
+                        onclick="this.select()"
+                      />
+                    </div>
+                    <div class="boxtext">
+                      <label for="income_another">Renda <span>*</span></label>
+                      <div class="inputprice">
+                        <input
+                          type="text"
+                          id="income_another"
+                          name="price"
+                          placeholder="Digite..."
+                          inputmode="numeric"
+                          autocomplete="off"
+                          onclick="this.select()"
+                          data-graduate-required
+                          data-geral-required
+                          data-regex
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="spaced" style="display: none" data-retired>
+                    <div class="boxtext">
+                      <label for="income_retired">Renda <span>*</span></label>
+                      <div class="inputprice">
+                        <input
+                          type="text"
+                          id="income_retired"
+                          name="price"
+                          placeholder="Digite..."
+                          inputmode="numeric"
+                          autocomplete="off"
+                          onclick="this.select()"
+                          data-retired-required
+                          data-geral-required
+                          data-regex
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="boxcontainer" data-second-area>
+                <h2 data-handle-title>Dados do(a) Proponente</h2>
+                <div class="selectarea">
+                  <h2>Cliente tem habilitação? <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="able"
+                      placeholder="Habilitado?"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="able" value="Sim">Sim</button>
+                    <button name="able" value="Não">Não</button>
+                  </div>
+                </div>
+                <div class="spaced">
+                  <div class="boxtext">
+                    <label for="cpf">CPF <span>*</span></label>
+                    <input
+                      type="text"
+                      id="cpf"
+                      name="cpf"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-regex
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="name">Nome Completo <span>*</span></label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="date">Data de Nascimento <span>*</span></label>
+                    <input
+                      type="text"
+                      id="date"
+                      name="date"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-regex
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="rg">RG <span>*</span></label>
+                    <input
+                      type="text"
+                      id="rg"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="affiliation"
+                      >Filiação - Nome da Mãe <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="affiliation"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="cep">CEP Residencial <span>*</span></label>
+                    <input
+                      type="text"
+                      id="cep"
+                      name="cep"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-regex
+                      data-input-cep
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="logradouro">Rua <span>*</span></label>
+                    <input
+                      type="text"
+                      id="logradouro"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-logradouro
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="number">N° <span>*</span></label>
+                    <input
+                      type="text"
+                      id="number"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="bairro">Bairro <span>*</span></label>
+                    <input
+                      type="text"
+                      id="bairro"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-bairro
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="complemento">Complemento</label>
+                    <input
+                      type="text"
+                      id="complemento"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="localidade">Cidade <span>*</span></label>
+                    <input
+                      type="text"
+                      id="localidade"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-localidade
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="phone">Celular <span>*</span></label>
+                    <span>Celular válido pertecente ao cliente</span>
+                    <input
+                      type="text"
+                      id="phone"
+                      name="phone"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-regex
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="email">E-mail <span>*</span></label>
+                    <span>E-mail válido pertecente ao cliente</span>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="boxcontainer" data-third-area>
+                <div class="selectarea">
+                  <h2>Dados do Veículo <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="vehicle"
+                      placeholder="Dados do Veículo"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                      data-input-plate
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="vehicle" value="Veículo 0km">
+                      Veículo 0km
+                    </button>
+                    <button name="vehicle" value="Veículo Usado">
+                      Veículo Usado
+                    </button>
+                  </div>
+                </div>
+                <div data-occasional-plate>
+                  <div class="boxtext">
+                    <label for="license_plate">Placa <span>*</span></label>
+                    <span
+                      >Informação indispensável quando se trata de veículos
+                      usados</span
+                    >
+                    <input
+                      type="text"
+                      class="plate"
+                      id="license_plate"
+                      placeholder="Digite..."
+                      maxlength="7"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      data-plate-required
+                    />
+                  </div>
+                </div>
+                <div class="spaced">
+                  <div class="boxtext">
+                    <label for="year_manufacture"
+                      >Ano de Fabricação <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="year_manufacture"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      maxlength="4"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-year-manufacture
+                    />
+                  </div>
+                  <div class="selectarea">
+                    <label for="year_model">Ano Modelo <span>*</span></label>
+  
+                    <div class="inputselect">
+                      <input
+                        type="text"
+                        id="year_model"
+                        placeholder="Ano"
+                        autocomplete="off"
+                        required
+                        data-input-select
+                      />
+                      <p>
+                        <span class="material-symbols-outlined">expand_more</span>
+                      </p>
+                    </div>
+                    <div class="selectlist" data-select-list>
+                      <button name="year_model" data-choose-model>
+                      </button>
+                      <button name="year_model" data-choose-model>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="boxtext">
+                    <label for="vehicle_brand"
+                      >Marca do Veículo <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="vehicle_brand"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="model_vehicle"
+                      >Modelo do Veículo <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="model_vehicle"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                  <div class="boxtext">
+                    <label for="version_vehicle"
+                      >Versão do Veículo <span>*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="version_vehicle"
+                      placeholder="Digite..."
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="selectarea">
+                  <h2>Motor <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="motor"
+                      placeholder="Motores"
+                      autocomplete="off"
+                      data-input-select
+                      data-input-motor
+                      required
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="motor" value="1.0">1.0</button>
+                    <button name="motor" value="1.3">1.3</button>
+                    <button name="motor" value="1.6">1.6</button>
+                    <button name="motor" value="1.8">1.8</button>
+                    <button name="motor" value="2.0">2.0</button>
+                    <button name="motor" value="3.0">3.0</button>
+                    <button name="motor" value="4.0">4.0</button>
+                    <button name="motor" value="5.0">5.0</button>
+                    <button name="motor" value="Outra Motorização">
+                      Outra Motorização
+                    </button>
+                  </div>
+                </div>
+                <div data-occasional-motor style="display: none">
+                  <div class="boxtext">
+                    <input
+                      type="text"
+                      id="outher_engine"
+                      placeholder="Qual Motorização?"
+                      inputmode="numeric"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      data-motor-required
+                    />
+                  </div>
+                </div>
+                <div class="selectarea">
+                  <h2>Combustível <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="fuel"
+                      placeholder="Tipo do Combustível"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="fuel" value="Flex">
+                      Flex <span>Gasolina ou Etanol</span>
+                    </button>
+                    <button name="fuel" value="Diesel">Diesel</button>
+                    <button name="fuel" value="Elétrico">Elétrico</button>
+                    <button name="fuel" value="Híbrido">Híbrido</button>
+                  </div>
+                </div>
+                <div class="selectarea">
+                  <h2>Câmbio do Veículo <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="exchange"
+                      placeholder="Câmbio"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="exchange" value="Automático">
+                      Câmbio Automático
+                    </button>
+                    <button name="exchange" value="Manual">
+                      Câmbio Manual
+                    </button>
+                  </div>
+                </div>
+                <div class="boxtext">
+                  <label for="vehicle_value"
+                    >Valor do Veículo <span>*</span></label
+                  >
+                  <div class="inputprice">
+                    <input
+                      type="text"
+                      id="vehicle_value"
+                      name="price"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      autocomplete="none"
+                      onclick="this.select()"
+                      required
+                      data-regex
+                      data-vehicle-value
+                    />
+                  </div>
+                </div>
+                <div class="boxtext">
+                  <label for="input_value"
+                    >Valor de Entrada <span>*</span></label
+                  >
+                  <div class="inputprice">
+                    <input
+                      type="text"
+                      id="input_value"
+                      name="price"
+                      placeholder="Digite..."
+                      inputmode="numeric"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      required
+                      data-regex
+                      data-input-value
+                    />
+                  </div>
+                </div>
+                <div class="boxtext">
+                  <label for="amount_financed"
+                    >Valor do Financiamento <span>*</span></label
+                  >
+                  <div class="inputprice">
+                    <input
+                      type="text"
+                      id="amount_financed"
+                      name="price"
+                      placeholder="Digite..."
+                      disabled
+                      data-regex
+                      data-amount-financed
+                    />
+                  </div>
+                </div>
+                <div class="selectarea">
+                  <h2>Prazo Pretendido <span>*</span></h2>
+
+                  <div class="inputselect">
+                    <input
+                      type="text"
+                      id="deadline"
+                      placeholder="Prazo"
+                      autocomplete="off"
+                      required
+                      data-input-select
+                      data-input-deadline
+                    />
+                    <p>
+                      <span class="material-symbols-outlined">expand_more</span>
+                    </p>
+                  </div>
+                  <div class="selectlist" data-select-list>
+                    <button name="deadline" value="12x">12x</button>
+                    <button name="deadline" value="24x">24x</button>
+                    <button name="deadline" value="36x">36x</button>
+                    <button name="deadline" value="48x">48x</button>
+                    <button name="deadline" value="60x">60x</button>
+                    <button name="deadline" value="Outro Prazo">
+                      Outro Prazo
+                    </button>
+                  </div>
+                </div>
+                <div data-occasional-deadline style="display: none">
+                  <div class="boxtext">
+                    <input
+                      type="text"
+                      placeholder="Prazo Requerido"
+                      id="outher_deadline"
+                      autocomplete="off"
+                      onclick="this.select()"
+                      data-deadline-required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="boxmessage">
+              <h1>Observações</h1>
+              <textarea
+                placeholder="Incluir informações adicionais se necessário..."
+                id="message_client"
+              ></textarea>
+            </div>
+            <button class="btnsend" data-btn-send>
+              Enviar
+              <span class="material-symbols-outlined">progress_activity</span>
+            </button>
+          </form>
+        </div>
+      </section>
+      <span class="hidden" data-response>Formulário enviado!</span>
+      <footer class="footerstyled">
+        <div class="container">
+          <div class="leftfooter">
+            <img
+              src="https://deltacapital.com.br/img/logo.png"
+              alt="delta_capital_logo"
+            />
+            <p>
+              deltacapital.com.br pertence à DELTA CAPITAL LTDA. A Delta Capital
+              não é uma instituição financeira. Somos correspondente de
+              múltiplas instituições financeiras, Fintechs e também corretora de
+              seguros atuando conforme regulamentação da SUSEP e do Banco
+              Central nos termos da Resolução no 3.954, de 24 de fevereiro de
+              2011. Os valores, taxas e CET (Custo Efetivo Total) das operações
+              poderão variar de acordo com os critérios de aprovação de cada
+              banco/financeira/seguradora/fintech, não cabendo à Delta Capital a
+              atribuição de intervir na política de crédito vigente em cada
+              parceiro. (c) 2022 DELTA CAPITAL LTDA.
+            </p>
+          </div>
+          <div class="rightfooter">
+            <h2>INFORMAÇÕES PARA CONTATO</h2>
+            <div>
+              <a
+                href="https://api.whatsapp.com/send/?phone=558540422050&text&type=phone_number&app_absent=0"
+                target="_blank"
+              >
+                Whatsapp
+              </a>
+              <a href="mailto:network@deltacapital.com.br" target="_blank"
+                >E-mail</a
+              >
+              <a
+                href="https://www.instagram.com/delta.capital/"
+                target="_blank"
+              >
+                Instagram</a
+              >
+              <a href="https://www.youtube.com/@deltacapital" target="_blank">
+                Youtube</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./script/main.js"></script>
+  </body>
+</html>
